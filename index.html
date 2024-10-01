@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>Arcane 2.0</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700%7cMarcellus+SC"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
+    <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <!-- <link rel="stylesheet" href="assets/vendor/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/css/navigation.css"> -->
+
+    <!-- Flickity -->
+    <!-- <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css"> -->
+
+    <!-- Photoswipe -->
+    <!-- <link rel="stylesheet" href="assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css"> -->
+
+    <!-- DateTimePicker -->
+    <!-- <link rel="stylesheet" href="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css"> -->
+
+    <!-- Summernote -->
+    <!-- <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote-bs4.css"> -->
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2"
+            data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2"
+            data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <!-- <img class="nk-img" src="assets/images/logo.svg" alt="ARCANE 2.0" width="170"> -->
+                <span class="display-4">Arcane</span>
+                <span class="display-4 nk-btn-color-main-1">
+                    2.0
+                </span>
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+    <div class="nk-page-background op-5" data-video="https://youtu.be/UkeDo1LhUqQ" data-video-loop="true"
+        data-video-mute="true" data-video-volume="0" data-video-start-time="0" data-video-end-time="0"
+        data-video-pause-on-page-leave="true" style="background-image: url('assets/images/page-background.jpg');"></div>
+
+     <div class="nk-page-background-audio d-none" data-audio="assets/mp3/purpleplanetmusic-desolation.mp3" data-audio-volume="100" data-audio-autoplay="true" data-audio-loop="true" data-audio-pause-on-page-leave="true"></div> 
+    <!-- END: Page Background -->
+
+
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+
+    <header class="nk-header nk-header-opaque">
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo" style="text-decoration:none;">
+                        <!-- <img src="assets/images/logo.svg" alt="" width="90"> -->
+                        <div style="width: 20vh; height:auto">
+                            <span class="display-4" style="font-size: 20px;">Arcane</span>
+                            <span class="display-4 nk-btn-color-main-1" style="font-size: 20px;">2.0</span>
+                        </div>
+                    </a>
+
+
+                    <ul class="nk-nav nk-nav-right d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
+                        <li class="active">
+                            <a href="index.html">
+                                Home</a>
+                        </li>
+                        <li class="">
+                            <a href="rules.php">
+                                Rules</a>
+                        </li>
+                        <li class="">
+                            <a href="leaderboard.php">
+                                Leaderboard</a>
+                        </li>
+                        <li class="">
+                            <a href="#aboutUs">
+                                About us</a>
+                        </li>
+                        <li class="">
+                            <a href="#contactUs">
+                                Contact us</a>
+                        </li>
+                        
+                        <li class="single-icon">
+                            <a href="#" class="nk-btn nk-btn-lg nk-btn-color-main-1 link-effect-4 nk-sign-toggle">
+                                <span>Login</span>
+                                <span class="nk-icon-toggle">
+                                    <span class="nk-icon-toggle-front">
+                                        <span class="fa fa-sign-in"></span>
+                                    </span>
+                                    <span class="nk-icon-toggle-back">
+                                        <span class="nk-icon-close"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+
+                        <li class="single-icon d-lg-none">
+                            <a href="#"  data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+    <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-overlay-content d-lg-none">
+        <div class="nano">
+            <div class="nano-content">
+                <a href="index.html" class="nk-nav-logo">
+                    <!-- <img src="assets/images/logo.svg" alt="" width="90"> -->
+                    <span class="display-4" style="font-size: 20px;">Arcane</span>
+                            <span class="display-4 nk-btn-color-main-1" style="font-size: 20px;">2.0</span>
+                </a>
+                <div class="nk-navbar-mobile-content">
+                    <ul class="nk-nav">
+                        <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Navbar Mobile -->
+
+
+
+    <div class="nk-main">
+
+        <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity" >
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity" style="height: 90vh">
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell" style="z-index: 1;">
+                        <div class="container" style="display: flex; justify-content: center; position: absolute;">
+                            <div class="nk-header-text" style="margin-top: -38vh;">
+                                <span class="display-4">Arcane</span>
+                <span class="display-4 nk-btn-color-main-1">
+                    2.0
+                </span>
+                                <div class="nk-gap-2"></div>
+                                <a href="https://forms.gle/NeRtnkVjpGkSgA2U8" target="_blank" class="nk-btn nk-btn-lg nk-btn-color-main-1 link-effect-4">
+                                    <span>Register</span>
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <!-- <div class="nk-gap-4"></div> -->
+                                <a href="demoquestion.php" class="nk-btn nk-btn-lg nk-btn-color-main-1 link-effect-4">
+                                    <span>Take Demo !</span>
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index: -10; height: 100%;">
+                        <source src="assets/main-bg2.mp4" type="video/mp4">
+                        <span class="nk-title display-3">Arcane</span>
+                    </video>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- END: Header Title -->
+        <!-- START: Coming Soon -->
+
+        <div class="nk-box bg-dark-1 text-center" >
+            <div class="nk-gap-6"></div>
+            <div class="bg-image op-3">
+                <img src="assets/images/image-3.jpg" alt="" class="jarallax-img">
+            </div>
+            <div class="container">
+                <span class="display-4">Arcane</span>
+                <span class="display-4 nk-btn-color-main-1">
+                    2.0
+                </span>
+                <!-- <div class="row" style="margin-left: 10vh;">
+                    <div class="display-4 col" style="display:flex; justify-content: right;">Arcane</div>
+                    <div class="display-4 col" style="color: orange; display:flex; justify-content:left">2.0</div>
+                </div> -->
+                <div class="nk-gap"></div>
+                <div>Coming in .....</div>
+                <div class="nk-gap-4"></div>
+
+            <!--    <div class="nk-countdown" data-end="2021-11-29 10:00" data-timezone="IST"></div>-->
+            </div>
+            <div class="nk-gap-2"></div>
+            <div class="nk-gap-6"></div>
+        </div>
+        <!-- END: Coming Soon -->
+
+        <!-- START: Features -->
+        <div class="container">
+            <div class="nk-gap-6"></div>
+            <div class="nk-gap-2"></div>
+            <div class="row vertical-gap lg-gap">
+                <div class="col-md-4">
+                    <div class="nk-ibox">
+                        <div class="nk-ibox-icon nk-ibox-icon-circle">
+                            <span class="ion-ios-game-controller-b"></span>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <h2 class="nk-ibox-title">Online conduction</h2>
+                            Arcane 2.0 An online treasure hunt will be conducted completely online through this website
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="nk-ibox">
+                        <div class="nk-ibox-icon nk-ibox-icon-circle">
+                            <span class="ion-fireball"></span>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <h2 class="nk-ibox-title">Catchy Battles</h2>
+                            Brain storming questions will give fire-wings while exploring this amazing event
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="nk-ibox">
+                        <div class="nk-ibox-icon nk-ibox-icon-circle">
+                            <span class="ion-ribbon-a"></span>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <h2 class="nk-ibox-title">Exciting Rewards</h2>
+                            Exciting rewards will be given to the winner and runner up along with the participation
+                            certificates.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-2"></div>
+            <div class="nk-gap-6"></div>
+        </div>
+        <!-- END: Features -->
+
+        <!-- START: About -->
+        <div class="nk-box bg-dark-1">
+            <div class="container text-center">
+                <div class="nk-gap-6"></div>
+                <span class="display-4">About </span>
+                <span class="display-4 nk-btn-color-main-1">
+                    Arcane
+                </span>
+                <!-- <h2 class="nk-title h1">About The Game</h2> -->
+                <div class="nk-gap-3"></div>
+                <div style="display: flex; justify-content: center;">
+                    <p style="text-align: left;">
+                        <h5>ARCANE2.0 is an online treasure hunt event which will be held by Team Mavericks on 29th November 2021. It comprises of brainstorming questions. This idea of Arcane was introduced to enhance the critical thinking and problem solving skills among the youngsters. As we were successful in launching Arcane few months back with an outstanding response so here we are back with the next level of Arcane i.e. ARCANE2.0</h5>
+                    <!--<ul class="lista" style="text-align: left;">-->
+                    <!--    <li>The event will be conducted on 29th November 2021</li>-->
+                    <!--    <li>There will be 2 rounds,</li>-->
+                    <!--    <li>Round one consisiting 10 questions and round two consisting 5 questions.</li>-->
+                    <!--    <li>Every question is interlinked in a single set, next question will be displayed only after solving the prior one.</li>-->
+                    <!--    <li>You will get 45 minutes to solve each round.</li>-->
+                    <!--    <li>A clue will be left on our on our Mavericks discord server after every 5 minutes make sure you join it to have and additional edge.</li>-->
+                    <!--    <li>Scoreboard will be digitally recorded based on response time.</li>-->
+                    <!--    <li>Treasure will be only for the Winner and there will be one Runner up </li>-->
+                    <!--    <li>Every participant will get an E-Certificate after successful completion of the event.</li>-->
+                    <!--</ul>-->
+                    </p>
+                </div>
+                <div class="nk-gap-2"></div>
+                <!--<div class="row no-gutters">-->
+                    <!--<div class="col-md-4">-->
+                    <!--    <div class="nk-box-2 nk-box-line">-->
+                            <!-- START: Counter -->
+                    <!--        <div class="nk-counter-3">-->
+                    <!--            <div class="nk-count">65</div>-->
+                    <!--            <h3 class="nk-counter-title h4">Unique Classes</h3>-->
+                    <!--            <div class="nk-gap-1"></div>-->
+                    <!--        </div>-->
+                            <!-- END: Counter -->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                    <!--    <div class="nk-box-2 nk-box-line">-->
+                            <!-- START: Counter -->
+                    <!--        <div class="nk-counter-3">-->
+                    <!--            <div class="nk-count">145</div>-->
+                    <!--            <h3 class="nk-counter-title h4">Epic Bosses</h3>-->
+                    <!--            <div class="nk-gap-1"></div>-->
+                    <!--        </div>-->
+                            <!-- END: Counter -->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                    <!--    <div class="nk-box-2 nk-box-line">-->
+                    <!--        <div class="nk-counter-3">-->
+                    <!--            <div class="nk-count">35</div>-->
+                    <!--            <h3 class="nk-counter-title h4">Castles</h3>-->
+                    <!--            <div class="nk-gap-1"></div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="nk-gap-2"></div>-->
+                <!--<div class="nk-gap-6"></div>-->
+            </div>
+        </div>
+        <!-- END: About -->
+
+        <!-- START: Subscribe -->
+        <div class="nk-box bg-dark-1" id="contactUs">
+            <div class="nk-gap-6"></div>
+            <div class="nk-gap-2"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                        <h2 class="nk-title text-center h1">For Query contact us here :</h2>
+                        <div class="nk-gap-3"></div>
+
+                        <div>
+                            <ul class="list-inline social-buttons" style="text-align: center;font-size: 75px; ">
+                                <li class="list-inline-item"><a href="https://twitter.com/team_mavericks_"><i
+                                            class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/teammavericks.kit"><i
+                                            class="fa fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://discord.gg/h5kWncTSeF"><i
+                                            class="fab fa-discord"></i></a></li>
+                                <li class="list-inline-item"><a
+                                        href="https://wa.me/917387672564?text=Please+send+me+the+details+regarding+Arcane+2.0"><i
+                                            class="fa fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-2"></div>
+            <div class="nk-gap-6"></div>
+            <div class="nk-gap-4"></div>
+        </div>
+        <!-- END: Subscribe -->
+
+        <footer class="nk-footer nk-footer-parallax nk-footer-parallax-opacity">
+            <img class="nk-footer-top-corner" src="assets/images/footer-corner.png" alt="">
+
+
+
+            <div class="container" id="aboutUs" style="margin-bottom: 100px;">
+                <div class="nk-gap-2"></div>
+                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <!-- <h2 class="nk-title text-center h1">About Us</h2> -->
+                    <!-- <p class="lead">We, TEAM MAVERICKS symbolises a team having an unorthodox views and innovative ideas. "MAVERICKS" means an independent person or a team who is similar to a bird that loves to live a free and prosperous life.</p> -->
+                </div>
+                <div style="display: flex;justify-content: center;">
+                <span class="display-4">About </span>
+                <span class="display-4 nk-btn-color-main-1">
+                    Us
+                </span>
+                </div>
+                <div class="nk-gap-1"></div>
+                <h5 style="text-align:center">
+                    We, TEAM MAVERICKS symbolize a team having an unorthodox views and innovative ideas. "MAVERICKS" means an independent person or a team who is similar to a bird that loves to live a free and prosperous life.
+                </h5>
+                <!--<p class="lead" style="display:flex;justify-content: center;">We, TEAM MAVERICKS symbolize a team having-->
+                <!--    an unorthodox views and innovative ideas. "MAVERICKS" means an -->
+                <!--</p>-->
+                <!--<p class="lead" style="display:flex;justify-content: center;margin-top:-25px;">-->
+                <!--    independent person or a team who is similar to a bird that loves to live a free and prosperous life.-->
+                <!--</p>-->
+
+                <div class="nk-gap-4"></div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+
+    </div>
+    <!-- END: Shopping Cart -->
+
+
+
+
+    <!--
+    START: Sign Form
+
+    Additional Classes:
+        .nk-sign-form-light
+-->
+    <div class="nk-sign-form">
+        <div class="nk-gap-5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+                    <div class="nk-sign-form-container">
+                        <div class="nk-sign-form-toggle h3">
+                            <span class="display-4">Log</span>
+                <span class="display-4 nk-btn-color-main-1">
+                    In
+                </span>
+                            <!-- <a href="#" class="nk-sign-form-login-toggle active">Log In</a> -->
+
+                            <!-- <a href="#" class="nk-sign-form-register-toggle">Register</a> -->
+                        </div>
+                        <div class="nk-gap-2"></div>
+
+                        <!-- START: Login Form -->
+                        <form class="nk-sign-form-login active" method="post" action="login.php">
+                            <input class="form-control" type="text" name="username" placeholder="Username or Email">
+                            <div class="nk-gap-2"></div>
+
+                            <input class="form-control" type="password" name="password" placeholder="Password">
+                            <div class="nk-gap-2"></div>
+                            <div style="display: flex;justify-content: center;">
+                                <button class="nk-btn nk-btn-color-main-1 link-effect-4" type="submit">Log In</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="nk-gap-1"></div>
+                            <div style="display: flex;justify-content: center;">
+                                <a class="nk-sign-form-lost-toggle" href="#">Lost Password?</a>
+                            </div>
+                        </form>
+                        <!-- END: Login Form -->
+
+                        <!-- START: Lost Password Form -->
+                        <form class="nk-sign-form-lost" action="#">
+                            <input class="form-control" type="text" placeholder="Username or Email">
+                            <div class="nk-gap-2"></div>
+
+                            <button class="nk-btn nk-btn-color-white link-effect-4 float-right">Get New
+                                Password</button>
+                        </form>
+                        <!-- END: Lost Password Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-5"></div>
+    </div>
+    <!-- END: Sign Form -->
+
+
+
+
+    <!-- START: Scripts -->
+
+
+    <!-- GSAP -->
+    <script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+    <!-- Popper -->
+    <!-- <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+
+
+    <script src="assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/moment/min/moment.min.js"></script>
+    <script src="assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+
+    <script src="assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+
+    <script src="assets/js/godlike.js"></script>
+    <script src="assets/js/godlike.min.js"></script>
+    <script src="assets/js/godlike-init.js"></script>
+    <!-- END: Scripts -->
+
+
+
+    
+
+</body>
+
+</html>
